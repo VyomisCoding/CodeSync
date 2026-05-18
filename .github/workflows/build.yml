@@ -47,4 +47,5 @@ jobs:
           mvn -B verify \
           org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
           -Dsonar.projectKey=VyomisCoding_CodeSync \
-          -Dsonar.organization=vyomiscoding
+          -Dsonar.organization=vyomiscoding \
+          -Dsonar.host.url=https://sonarcloud.io
