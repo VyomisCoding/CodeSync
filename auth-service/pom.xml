@@ -30,6 +30,7 @@
 		<java.version>17</java.version>
 		<spring-cloud.version>2025.1.1</spring-cloud.version>
 		<springdoc.version>3.0.3</springdoc.version>
+		<sonar.organization>vyomiscoding</sonar.organization>
 	</properties>
 	<dependencies>
 		<dependency>
