@@ -39,20 +39,8 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: Debug project structure
-        run: |
-          echo "Current Directory:"
-          pwd
-
-          echo "Project Files:"
-          ls -R
-
-          echo "Finding pom.xml files:"
-          find . -name "pom.xml"
-
-      # CHANGE THIS AFTER DEBUG OUTPUT
       - name: Build and analyze
-        working-directory: YOUR_MAVEN_FOLDER
+        working-directory: api-gateway
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
